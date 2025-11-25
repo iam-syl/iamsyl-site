@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>i am, syl</title>
+    <title>Syl ⁕ Product Designer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+        
+    <!-- iOS Safari -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Spirit:wght@300;400&display=swap" rel="stylesheet">
@@ -14,6 +21,12 @@
             box-sizing: border-box;
         }
 
+           html {
+               overflow: hidden;
+               height: 100%;
+           }
+
+
         body {
             background-color: #1E83FF;
             font-family: 'New Spirit', serif;
@@ -22,6 +35,8 @@
             align-items: center;
             min-height: 100vh;
             color: #F6F6F0;
+            overflow: hidden;
+            transition: background-color 0.4s ease;
         }
 
         .container {
@@ -51,10 +66,23 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img src="logo.svg" alt="i am, syl" class="logo">
+        <img src="logo.svg" alt="iamsyl.com" class="logo">
         
     </div>
+    <script>
+        const logo = document.querySelector('.logo');
+        const body = document.body;
+
+        logo.addEventListener('mouseenter', () => {
+            body.style.backgroundColor = '#7E7D20';
+        });
+
+        logo.addEventListener('mouseleave', () => {
+            body.style.backgroundColor = '#1E83FF';
+        });
+    </script>
 </body>
 </html>
