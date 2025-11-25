@@ -28,11 +28,11 @@
             text-align: center;
         }
 
-        h1 {
-            font-size: 8rem;
-            font-weight: 300;
+        .logo {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
             margin-bottom: 1rem;
-            letter-spacing: -0.02em;
         }
 
         p {
@@ -41,8 +41,8 @@
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 4rem;
+            .logo {
+                max-width: 400px;
             }
             
             p {
@@ -53,8 +53,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>i am, syl</h1>
-        <p>hey@iamsyl.com</p>
+        <img src="logo.svg" alt="i am, syl" class="logo">
+        
     </div>
 </body>
 </html>
